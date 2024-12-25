@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/static/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background: #0056b3;
+            width: 100%;
+            text-align: center;
+            padding: 2vh 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 2vw;
+            font-weight: bold;
+            font-size: 1vw;
+        }
+        nav a:hover {
+            color: #FFD700; /* Gold hover effect */
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .box {
+            background: rgba(0, 86, 179, 0.8); /* Blue with transparency */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 2vh;
+            width: 20vw;
+            max-width: 30%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .box h3 {
+            font-size: 2vw;
+            margin-bottom: 2vh;
+        }
+        .majors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2vw;
+            margin-top: 2vh;
+        }
+        .majors-item {
+            text-align: center;
+        }
+        .majors-item img {
+            width: 6vw;
+            height: 6vw;
+            margin-top: 1vh;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .majors-item p {
+            font-size: 1.6vw;
+        }
+        .center-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-box img {
+            width: 12vw;
+            height: 12vw;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 2vh;
+        }
+        .center-box p {
+            font-size: 1.6vw;
+        }
+        .right-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-box img {
+            width: 12vw;
+            height: auto;
+            margin-top: 1vh;
+        }
+        .right-box p {
+            font-size: 1.6vw;
+        }
+        footer {
+            background: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 2vh 0;
+            width: 100%;
+        }
+        footer a {
+            text-decoration: none;
+            color: #FFD700;
+            margin: 0 2vw;
+            font-size: 1vw;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <a href="/about">About Me</a>
+            <a href="/coursework">Coursework</a>
+            <a href="/teaching">Teaching Experience</a>
+            <a href="/research">Research</a>
+            <a href="/projects">Projects</a>
+            <a href="/skills">Skills</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Majors Section -->
+        <div class="box">
+            <h3>Majors</h3>
+            <div class="majors-grid">
+                <div class="majors-item">
+                    <p>Computer Science</p>
+                    <img src="/static/computer_science.png" alt="Computer Science">
+                </div>
+                <div class="majors-item">
+                    <p>Data Science</p>
+                    <img src="/static/data_science.png" alt="Data Science">
+                </div>
+                <div class="majors-item">
+                    <p>Mathematics</p>
+                    <img src="/static/mathematics.png" alt="Mathematics">
+                </div>
+                <div class="majors-item">
+                    <p>Statistics</p>
+                    <img src="/static/statistics.png" alt="Statistics">
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Photo Section -->
+        <div class="box center-box">
+            <img src="/static/my_photo.jpg" alt="My Photo">
+            <p>NYC Metropolitan Area</p>
+            <p>Contact Me: <a href="mailto:howardluo2021@gmail.com" style="color: #FFD700;">howardluo2021@gmail.com</a></p>
+        </div>
+
+        <!-- Rutgers Section -->
+        <div class="box right-box">
+            <h3>School</h3>
+            <img src="/static/rutgers_logo.png" alt="Rutgers University">
+            <p>Rutgers University</p>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/HowardLuo49" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/howard-luo-03b54b238/" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>
