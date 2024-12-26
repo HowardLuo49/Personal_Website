@@ -1,0 +1,471 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background: #0056b3;
+    width: 100%;
+    text-align: center;
+    padding: 2vh 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 2vw;
+    font-weight: bold;
+    font-size: 1vw;
+}
+nav a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    width: 90%;
+    margin: 0 auto;
+}
+.box {
+    background: rgba(0, 86, 179, 0.8); /* Blue with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2vh;
+    width: 20vw;
+    max-width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box h3 {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}
+.majors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    margin-top: 2vh;
+}
+.majors-item {
+    text-align: center;
+}
+.majors-item img {
+    width: 6vw;
+    height: 6vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.majors-item p {
+    font-size: 1.6vw;
+}
+.center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-box img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 2vh;
+}
+.center-box p {
+    font-size: 1.6vw;
+}
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-box img {
+    width: 12vw;
+    height: auto;
+    margin-top: 1vh;
+}
+.right-box p {
+    font-size: 1.6vw;
+}
+footer {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 2vw;
+    font-size: 1vw;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Skills */
+.skills-category {
+    margin: 3vh 0;
+}
+
+.skills-category h2 {
+    font-size: 2vw;
+    color: #FFD700;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 skills per row */
+    gap: 2vw; /* Space between skills */
+    padding: 0 2vw;
+}
+
+.skills-item {
+    background: rgba(0, 86, 179, 0.8); /* Blue with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2vh;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.skills-item img {
+    width: 6vw; /* Adjust size based on screen width */
+    height: 6vw; /* Adjust size based on screen width */
+    margin: 1vh 0;
+    border-radius: 10px;
+    object-fit: contain; /* Maintain aspect ratio */
+    /* background: #fff; */
+    padding: 5%; /* Optional: adds padding inside the image container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills-item p {
+    font-size: 1.2vw;
+    color: #fff;
+    margin: 0;
+}
+
+
+/* Coursework */
+.coursework-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 2vw; /* Space between columns */
+    padding: 2vw;
+    width: 100%;
+}
+
+.coursework-column {
+    background: rgba(0, 86, 179, 0.8); /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    text-align: left;
+}
+
+.coursework-column h2 {
+    font-size: 1.8vw;
+    color: #FFD700; /* Gold text */
+    margin-bottom: 1vw;
+}
+
+.coursework-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.coursework-column ul li {
+    font-size: 1.2vw;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+footer {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Teaching Experience */
+.teaching-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 2vw; /* Space between cards */
+    padding: 2vw;
+    width: 100%;
+}
+
+.teaching-card {
+    background: rgba(0, 86, 179, 0.8); /* Blue with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    color: #fff;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teaching-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.teaching-card h2 {
+    font-size: 1.8vw;
+    color: #FFD700; /* Gold heading text */
+    margin-bottom: 1vw;
+}
+
+.teaching-card p, .teaching-card ul {
+    font-size: 1.2vw;
+    color: #fff;
+    margin: 0.5vw 0;
+}
+
+.teaching-card ul {
+    padding-left: 1.5vw;
+    list-style-type: disc; /* Bulleted list for courses */
+}
+
+footer {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* research */
+.research-container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column to ensure three rows */
+    width: 100%;
+    max-width: 2400px; /* Optional: Adjust for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.research-card {
+    background: rgba(0, 86, 179, 0.8); /* Blue with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    color: #fff;
+    text-align: left;
+    margin: 2vw; /* Adds space around each card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.research-card h2 {
+    font-size: 1.8vw;
+    color: #FFD700; /* Gold heading text */
+    margin-bottom: 1vw;
+}
+
+.research-card p {
+    font-size: 1.2vw;
+    color: #fff;
+    margin: 0.5vw 0;
+}
+
+footer {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2vw; /* Space between project cards */
+    padding: 2vw;
+    width: 100%;
+    max-width: 1800px; /* Optional: Limit max width */
+    margin: 0 auto; /* Center the grid on the page */
+}
+
+.project-card {
+    background: rgba(0, 86, 179, 0.8); /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    color: #fff;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.project-card h2 {
+    font-size: 1.5vw;
+    color: #FFD700; /* Gold text */
+    margin-bottom: 1vw;
+}
+
+.project-card p {
+    font-size: 1.2vw;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #FFD700; /* Gold link */
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* about */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #0056b3;
+    margin-bottom: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 86, 179, 0.8); /* Light blue with transparency */
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.hobbies-box {
+    text-align: left;
+    color: #fff;
+    background: rgba(0, 86, 179, 0.8); /* Light blue with transparency */
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.hobbies-box h2 {
+    font-size: 1.8vw;
+    color: #FFD700; /* Gold heading text */
+    margin-bottom: 1vw;
+}
+
+.hobbies-box ul {
+    list-style-type: disc;
+    margin: 1vw 0;
+    padding-left: 2vw;
+}
+
+.hobbies-box ul li {
+    font-size: 1.2vw;
+    color: #fff;
+    margin-bottom: 0.5vw;
+    line-height: 1.5;
+}
+
+footer {
+    background: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 2vw;
+    font-size: 1.2vw;
+}
+
+footer a:hover {
+    color: #fff;
+}
