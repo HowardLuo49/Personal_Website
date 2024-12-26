@@ -16,6 +16,15 @@ header {
     padding: 2vh 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+header h1 {
+    font-size: 2vw; /* Adjust size as needed */
+    color: #00fff2; /* Gold color for the text */
+    text-align: center; /* Ensures the text is centered */
+    margin-top: 3vh; /* Adds some spacing above the text */
+    margin-bottom: 1vh; /* Adds spacing below the text */
+    font-weight: bold; /* Makes the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for a more dynamic look */
+}
 nav {
     display: flex;
     justify-content: center;
@@ -29,7 +38,7 @@ nav a {
     font-size: 1vw;
 }
 nav a:hover {
-    color: #FFD700; /* Gold hover effect */
+    color: #00ff55; /* Gold hover effect */
 }
 .container {
     display: flex;
@@ -71,9 +80,14 @@ nav a:hover {
     margin-top: 1vh;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; /* Smooth hover transition */
 }
 .majors-item p {
     font-size: 1.6vw;
+}
+img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 .center-box {
     display: flex;
@@ -87,6 +101,7 @@ nav a:hover {
     border-radius: 50%;
     border: 3px solid #fff;
     margin-bottom: 2vh;
+    transition: transform 0.3s ease-in-out; /* Smooth hover transition */
 }
 .center-box p {
     font-size: 1.6vw;
@@ -101,6 +116,7 @@ nav a:hover {
     width: 12vw;
     height: auto;
     margin-top: 1vh;
+    transition: transform 0.3s ease-in-out; /* Smooth hover transition */
 }
 .right-box p {
     font-size: 1.6vw;
@@ -114,12 +130,12 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: #FFD700;
+    color: #fff;
     margin: 0 2vw;
     font-size: 1vw;
 }
 footer a:hover {
-    color: #fff;
+    color: #00ff55;
 }
 
 /* Skills */
@@ -179,7 +195,7 @@ footer a:hover {
     grid-template-columns: repeat(4, 1fr); /* Four equal columns */
     gap: 2vw; /* Space between columns */
     padding: 2vw;
-    width: 100%;
+    width: 95%;
 }
 
 .coursework-column {
@@ -188,6 +204,12 @@ footer a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     padding: 2vw;
     text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coursework-column:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 .coursework-column h2 {
@@ -208,32 +230,13 @@ footer a:hover {
     margin-bottom: 1vh;
 }
 
-footer {
-    background: #0056b3;
-    color: #fff;
-    text-align: center;
-    padding: 2vh 0;
-    width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    color: #FFD700;
-    margin: 0 2vw;
-    font-size: 1.2vw;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
 /* Teaching Experience */
 .teaching-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
     gap: 2vw; /* Space between cards */
     padding: 2vw;
-    width: 100%;
+    width: 95%;
 }
 
 .teaching-card {
@@ -266,25 +269,6 @@ footer a:hover {
 .teaching-card ul {
     padding-left: 1.5vw;
     list-style-type: disc; /* Bulleted list for courses */
-}
-
-footer {
-    background: #0056b3;
-    color: #fff;
-    text-align: center;
-    padding: 2vh 0;
-    width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    color: #FFD700;
-    margin: 0 2vw;
-    font-size: 1.2vw;
-}
-
-footer a:hover {
-    color: #fff;
 }
 
 /* research */
@@ -322,25 +306,6 @@ footer a:hover {
     font-size: 1.2vw;
     color: #fff;
     margin: 0.5vw 0;
-}
-
-footer {
-    background: #0056b3;
-    color: #fff;
-    text-align: center;
-    padding: 2vh 0;
-    width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    color: #FFD700;
-    margin: 0 2vw;
-    font-size: 1.2vw;
-}
-
-footer a:hover {
-    color: #fff;
 }
 
 /* projects */
@@ -390,6 +355,35 @@ footer a:hover {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+.project-links {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #FFD700; /* Gold color for links */
+    font-weight: bold;
+    margin: 0 1vw; /* Adds spacing between links */
+    font-size: 1.2vw;
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.project-links a:hover {
+    color: #fff; /* Changes link color on hover */
+}
+
+.project-links span {
+    font-size: 1.2vw;
+    color: #FFD700; /* Gold color for the text */
+    font-weight: bold;
+    margin: 0 1vw; /* Adds spacing between links and separator */
+}
+
+.project-links .request-text {
+    color: #FFD700; /* Matches link color */
 }
 
 /* about */
@@ -449,23 +443,4 @@ footer a:hover {
     color: #fff;
     margin-bottom: 0.5vw;
     line-height: 1.5;
-}
-
-footer {
-    background: #0056b3;
-    color: #fff;
-    text-align: center;
-    padding: 2vh 0;
-    width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    color: #FFD700;
-    margin: 0 2vw;
-    font-size: 1.2vw;
-}
-
-footer a:hover {
-    color: #fff;
 }
