@@ -8,6 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    cursor: url('/static/cursor_1_1.png'), auto;
+}
+a, a:hover {
+    cursor: url('/static/cursor_1_2.png'), pointer;
 }
 header {
     background: #0056b3;
