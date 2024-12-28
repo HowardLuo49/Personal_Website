@@ -2,16 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('/static/background.jpg') no-repeat center center fixed;
+    background: url('/static/misc_assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    cursor: url('/static/cursor_1_1.png'), auto;
+    cursor: url('/static/cursors/cursor_1_1.png'), auto;
 }
 a, a:hover {
-    cursor: url('/static/cursor_1_2.png'), pointer;
+    cursor: url('/static/cursors/cursor_1_2.png'), pointer;
 }
 header {
     background: #0056b3;
