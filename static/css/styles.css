@@ -265,10 +265,10 @@ footer a:hover {
     background: rgba(0, 86, 179, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 2vw;
+    padding: 1vw;
     color: #fff;
     text-align: left;
-    margin: 2vw;
+    margin: 1vw;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .research-card:hover {
@@ -303,6 +303,8 @@ footer a:hover {
     padding: 2vw;
     color: #fff;
     text-align: left;
+    position: relative;
+    padding-bottom: 250px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-card:hover {
@@ -352,6 +354,33 @@ footer a:hover {
 .project-links .request-text {
     color: #FFD700;
 }
+.project-card {
+    background: rgba(0, 86, 179, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+.project-image {
+    display: flex;
+    justify-content: center;
+    margin: 1vw 0;
+}
+.project-image img {
+    width: auto;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-image img:hover {
+    transform: scale(1.2);
+}
+.project-links {
+    text-align: center;
+    margin-top: 1vw;
+}
+
 
 /* about */
 .about-container {
